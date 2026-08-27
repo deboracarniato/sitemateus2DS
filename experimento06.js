@@ -1,4 +1,4 @@
-const botaoAbrir = document.getElementById("btnAbrirModal");
+const botaoAbrir = document.getElementById("botao06");
 const modalContainer = document.getElementById("modalContainer");
 
 botaoAbrir.addEventListener("click", function(){
@@ -9,5 +9,10 @@ botaoAbrir.addEventListener("click", function(){
                   <p>Este modal inteiro foi criado pelo JavaScript.</p>
                    <button id="btnFechaModal">Fecha</button>
                </div>
-           </div>`
+           </div>` ;
+
+           const botaoFechar = document.getElementById("btnFechaModal");
+           botaoFechar.addEventListener("click", function(){
+            modalContainer.innerHTML = "";
+           })
 })
